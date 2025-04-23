@@ -1,5 +1,7 @@
 namespace IFHPipelines.GitHub.Schema
 
+open IFHPipelines.GitHub.Helpers
+
 module RunName =
     type RunNameError = SingleLineStringError of SingleLineString.SingleLineStringError
 
@@ -14,4 +16,8 @@ module RunName =
         | Some some ->
             if System.String.IsNullOrWhiteSpace some
             then Ok Whitespace
-            else Error "TODO"
+            else
+                SingleLineString.create some
+                |> StateResult.map
+                    SingleLineStringError
+                    SingleLineString
