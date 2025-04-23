@@ -1,12 +1,13 @@
-﻿<Project Sdk="Microsoft.NET.Sdk">
-
+<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
     <TargetFramework>net9.0</TargetFramework>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
-
   <ItemGroup>
     <Compile Include="Library.fs" />
+    <Compile Include="SingleLineString.fs" />
+    <Compile Include="Trigger.fs" />
+    <Compile Include="RunName.fs" />
+    <Compile Include="Pipeline.fs" />
   </ItemGroup>
-
 </Project>
