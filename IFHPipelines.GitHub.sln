@@ -7,6 +7,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{827E0CD3-B72
 EndProject
 Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "IFHPipelines.GitHub.Schema", "src\IFHPipelines.GitHub.Schema\IFHPipelines.GitHub.Schema.fsproj", "{3906A0CC-3CC1-4E63-9F82-24C95FAA75B6}"
 EndProject
+Project("{F2A71F9B-5D33-465A-A702-920D77279786}") = "IFHPipelines.GitHub.Helpers", "src\IFHPipelines.GitHub.Helpers\IFHPipelines.GitHub.Helpers.fsproj", "{A1550BAE-5375-48E4-B452-F47CE90EA9C6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -29,11 +31,24 @@ Global
 		{3906A0CC-3CC1-4E63-9F82-24C95FAA75B6}.Release|x64.Build.0 = Release|Any CPU
 		{3906A0CC-3CC1-4E63-9F82-24C95FAA75B6}.Release|x86.ActiveCfg = Release|Any CPU
 		{3906A0CC-3CC1-4E63-9F82-24C95FAA75B6}.Release|x86.Build.0 = Release|Any CPU
+		{A1550BAE-5375-48E4-B452-F47CE90EA9C6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A1550BAE-5375-48E4-B452-F47CE90EA9C6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A1550BAE-5375-48E4-B452-F47CE90EA9C6}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{A1550BAE-5375-48E4-B452-F47CE90EA9C6}.Debug|x64.Build.0 = Debug|Any CPU
+		{A1550BAE-5375-48E4-B452-F47CE90EA9C6}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{A1550BAE-5375-48E4-B452-F47CE90EA9C6}.Debug|x86.Build.0 = Debug|Any CPU
+		{A1550BAE-5375-48E4-B452-F47CE90EA9C6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A1550BAE-5375-48E4-B452-F47CE90EA9C6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A1550BAE-5375-48E4-B452-F47CE90EA9C6}.Release|x64.ActiveCfg = Release|Any CPU
+		{A1550BAE-5375-48E4-B452-F47CE90EA9C6}.Release|x64.Build.0 = Release|Any CPU
+		{A1550BAE-5375-48E4-B452-F47CE90EA9C6}.Release|x86.ActiveCfg = Release|Any CPU
+		{A1550BAE-5375-48E4-B452-F47CE90EA9C6}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{3906A0CC-3CC1-4E63-9F82-24C95FAA75B6} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
+		{A1550BAE-5375-48E4-B452-F47CE90EA9C6} = {827E0CD3-B72D-47B6-A68D-7590B98EB39B}
 	EndGlobalSection
 EndGlobal

@@ -4,10 +4,13 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    <Compile Include="Library.fs" />
+    
     <Compile Include="SingleLineString.fs" />
     <Compile Include="Trigger.fs" />
     <Compile Include="RunName.fs" />
     <Compile Include="Pipeline.fs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IFHPipelines.GitHub.Helpers\IFHPipelines.GitHub.Helpers.fsproj" />
   </ItemGroup>
 </Project>
