@@ -4,9 +4,8 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
   <ItemGroup>
-    
     <Compile Include="SingleLineString.fs" />
-    <Compile Include="Trigger.fs" />
+    <Compile Include="Events/*.fs" />
     <Compile Include="RunName.fs" />
     <Compile Include="Pipeline.fs" />
   </ItemGroup>
