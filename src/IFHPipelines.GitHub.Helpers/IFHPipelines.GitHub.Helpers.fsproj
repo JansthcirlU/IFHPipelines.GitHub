@@ -5,7 +5,7 @@
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
   </PropertyGroup>
 
-  <ItemGroup>
+  <ItemGroup><Compile Include="Seq.fs" /><Compile Include="String.fs" />
     <Compile Include="StateResult.fs" />
   </ItemGroup>
 
