@@ -5,7 +5,39 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="SingleLineString.fs" />
-    <Compile Include="Events/*.fs" />
+    <Compile Include="Events/BranchProtectionRule.fs" />
+    <Compile Include="Events/CheckRun.fs" />
+    <Compile Include="Events/CheckSuite.fs" />
+    <Compile Include="Events/Create.fs" />
+    <Compile Include="Events/Delete.fs" />
+    <Compile Include="Events/Deployment.fs" />
+    <Compile Include="Events/DeploymentStatus.fs" />
+    <Compile Include="Events/Discussion.fs" />
+    <Compile Include="Events/DiscussionComment.fs" />
+    <Compile Include="Events/Fork.fs" />
+    <Compile Include="Events/Gollum.fs" />
+    <Compile Include="Events/IssueComment.fs" />
+    <Compile Include="Events/Issues.fs" />
+    <Compile Include="Events/Label.fs" />
+    <Compile Include="Events/MergeGroup.fs" />
+    <Compile Include="Events/Milestone.fs" />
+    <Compile Include="Events/PageBuild.fs" />
+    <Compile Include="Events/Public.fs" />
+    <Compile Include="Events/PullRequest.fs" />
+    <Compile Include="Events/PullRequestReview.fs" />
+    <Compile Include="Events/PullRequestReviewComment.fs" />
+    <Compile Include="Events/PullRequestTarget.fs" />
+    <Compile Include="Events/Push.fs" />
+    <Compile Include="Events/RegistryPackage.fs" />
+    <Compile Include="Events/Release.fs" />
+    <Compile Include="Events/RepositoryDispatch.fs" />
+    <Compile Include="Events/Schedule.fs" />
+    <Compile Include="Events/Status.fs" />
+    <Compile Include="Events/Watch.fs" />
+    <Compile Include="Events/WorkflowCall.fs" />
+    <Compile Include="Events/WorkflowDispatch.fs" />
+    <Compile Include="Events/WorkflowRun.fs" />
+    <Compile Include="Events/Event.fs" />
     <Compile Include="RunName.fs" />
     <Compile Include="Pipeline.fs" />
   </ItemGroup>

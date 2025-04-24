@@ -1,6 +1,71 @@
 namespace IFHPipelines.GitHub.Schema.Events
 
 module Event =
+    type EventError =
+        | BranchProtectionRuleError of BranchProtectionRule.BranchProtectionRuleError
+        | CheckRunError of CheckRun.CheckRunError
+        | CheckSuiteError of CheckSuite.CheckSuiteError
+        | CreateError of Create.CreateError
+        | DeleteError of Delete.DeleteError
+        | DeploymentError of Deployment.DeploymentError
+        | DeploymentStatusError of DeploymentStatus.DeploymentStatusError
+        | DiscussionError of Discussion.DiscussionError
+        | DiscussionCommentError of DiscussionComment.DiscussionCommentError
+        | ForkError of Fork.ForkError
+        | GollumError of Gollum.GollumError
+        | IssueCommentError of IssueComment.IssueCommentError
+        | IssuesError of Issues.IssuesError
+        | LabelError of Label.LabelError
+        | MergeGroupError of MergeGroup.MergeGroupError
+        | MilestoneError of Milestone.MilestoneError
+        | PageBuildError of PageBuild.PageBuildError
+        | PublicError of Public.PublicError
+        | PullRequestError of PullRequest.PullRequestError
+        | PullRequestReviewError of PullRequestReview.PullRequestReviewError
+        | PullRequestReviewCommentError of PullRequestReviewComment.PullRequestReviewCommentError
+        | PullRequestTargetError of PullRequestTarget.PullRequestTargetError
+        | PushError of Push.PushError
+        | RegistryPackageError of RegistryPackage.RegistryPackageError
+        | ReleaseError of Release.ReleaseError
+        | RepositoryDispatchError of RepositoryDispatch.RepositoryDispatchError
+        | ScheduleError of Schedule.ScheduleError
+        | StatusError of Status.StatusError
+        | WatchError of Watch.WatchError
+        | WorkflowCallError of WorkflowCall.WorkflowCallError
+        | WorkflowDispatchError of WorkflowDispatch.WorkflowDispatchError
+        | WorkflowRunError of WorkflowRun.WorkflowRunError
+
     /// <summary>See <see href="https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows">https://docs.github.com/en/actions/writing-workflows/choosing-when-your-workflow-runs/events-that-trigger-workflows</see>.</summary>
     type Event =
-        | Push
+        | BranchProtectionRule of BranchProtectionRule.BranchProtectionRule
+        | CheckRun of CheckRun.CheckRun
+        | CheckSuite of CheckSuite.CheckSuite
+        | Create of Create.Create
+        | Delete of Delete.Delete
+        | Deployment of Deployment.Deployment
+        | DeploymentStatus of DeploymentStatus.DeploymentStatus
+        | Discussion of Discussion.Discussion
+        | DiscussionComment of DiscussionComment.DiscussionComment
+        | Fork of Fork.Fork
+        | Gollum of Gollum.Gollum
+        | IssueComment of IssueComment.IssueComment
+        | Issues of Issues.Issues
+        | Label of Label.Label
+        | MergeGroup of MergeGroup.MergeGroup
+        | Milestone of Milestone.Milestone
+        | PageBuild of PageBuild.PageBuild
+        | Public of Public.Public
+        | PullRequest of PullRequest.PullRequest
+        | PullRequestReview of PullRequestReview.PullRequestReview
+        | PullRequestReviewComment of PullRequestReviewComment.PullRequestReviewComment
+        | PullRequestTarget of PullRequestTarget.PullRequestTarget
+        | Push of Push.Push
+        | RegistryPackage of RegistryPackage.RegistryPackage
+        | Release of Release.Release
+        | RepositoryDispatch of RepositoryDispatch.RepositoryDispatch
+        | Schedule of Schedule.Schedule
+        | Status of Status.Status
+        | Watch of Watch.Watch
+        | WorkflowCall of WorkflowCall.WorkflowCall
+        | WorkflowDispatch of WorkflowDispatch.WorkflowDispatch
+        | WorkflowRun of WorkflowRun.WorkflowRun
